@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('tipografias/Montserrat-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+h2 {
+    color: #B32618;
+    font-size: 45px;
+}
+
+p {
+    font-size: 40px;
+}
+
+body {
+    font-family: 'MiFuente', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header, footer {
+    background-color: #B32618;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo{
+    width: 100%;
+    max-width: 370px;
+    height: 48px;
+  }
+  section {
+    width: 100%;
+  }
+
+/* SECCION 1 */
+ 
+  .seccion1{
+    background-color: #95C2D3;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Espacio entre columnas */
+  }  
+
+  .lado-izquierdo {
+    width: 60%;
+  }
+  .lado-derecho {
+    width: 40%;
+  }
+
+  .lado-izquierdo img {
+    max-width: 100%;
+  }
+
+  button {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #68A7BF;  /* color del borde */
+    border-radius: 8px;         /* redondeo de bordes */
+    background-color: transparent;
+    background-color: #68A7BF;
+    font-size: 1rem;
+    color: #F0F5F6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* FIN SECCION 1 */
+
+/* SECCION 2 */
+.seccion2 h2, .seccion2 h3 {
+    text-align: center;
+  }
+  
+  .imagenesRecetas {
+    display: flex;
+    justify-content: space-around; /* distribuye el espacio */
+    gap: 20px; /* opcional para dar espacio entre elementos */
+    padding: 20px;
+    flex-wrap: wrap; /* permite que pasen a otra línea si no entran */
+  }
+  
+  .imagenesReceta {
+    position: relative;
+    width: 30%; /* ahora sí, definimos el ancho del contenedor */
+  }
+  
+  .imagenesReceta img {
+    width: 100%; /* para que ocupe todo el contenedor */
+    height: auto;
+    border-radius: 25px 25px 25px 25px;
+  }
+  
+  .etiqueta {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #c62828;
+    color: white;
+    text-align: center;
+    padding: 21px 0;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 0px 0px 25px 25px;
+  }
+/* FIN SECCION 2 */
+
+
