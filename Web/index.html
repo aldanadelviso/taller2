@@ -5,6 +5,7 @@
   <meta name="description" content="Paulina Cocina">
   <meta name="language" content="es">
   <link rel="stylesheet" href="./estilo.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
 
@@ -19,14 +20,14 @@
         </div>
         <div class="lado-derecho">
             <h2>¿YA SABES QUE <br>COCINAR PARA <br>PASCUA?</h2>
-            <p>Recibí recetas exclusivas en tu mail justo antes de la próxima fiesta.</p>
-            <button>RECIBIR RECETAS</button>
+            <p>Recibí recetas exclusivas<br> en tu mail justo antes<br> de la próxima fiesta.</p>
+            <a href="#seccion3"><button >RECIBIR RECETAS</button></a>
         </div> 
     </section>
 
     <section class="seccion2">
       <h2>RECETAS PARA ESTA PASCUA</h2>
-      <h3>Suscribite y recibí estas exquisitas recetas y mucho más.</h3>
+      <p>Suscribite y recibí estas exquisitas recetas y mucho más.</p>
       <div class="imagenesRecetas">
         <div class="imagenesReceta">
             <img src="./imagenes/rosca.jpg" alt="">
@@ -45,25 +46,52 @@
 
     </section>
 
-    <section>
-      <h2>DEJANOS TU DATOS</h2>
-      <p>Y recibí las recetas más ricas!</p>
-      <p>Nombre</p>
-      <p>Mail</p>
-      <button>RECIBIR RECETAS</button>
-
+    <section id="seccion3" class="seccion3">
+      <div class="contenedorFormulario">
+          <h3>DEJANOS TU DATOS</h3>
+          <p>Y recibí las recetas más ricas!</p>
+          <form id="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="email" id="mail" name="mail" placeholder="Mail">
+            <button id="botonFormulario" type="submit">RECIBIR RECETAS</button>
+            <div id="mensajeError" class="errorFormulario"></div>
+          </form>
+          <!-- Modal Popup -->
+          <div class="modal" id="popupGracias">
+            <div class="header-content">
+              <img src="./imagenes/logop.svg" alt="">
+            </div>
+            <div class="modal-content">
+              <h2 id="mensajeGracias">¡GRACIAS!</h2>
+              <div class="check-icon">✔️</div>
+              <p>Desde ahora, recibirás nuestras recetas antes<br>que sean públicas.</p>
+              <p>¡Que empiece el festín!</p>
+              <button id="boton-ok" class="ok-button">OK</button>
+            </div>
+          </div>
+      </div>
     </section>
 
-    <section>
+    <section class="seccion4">
       <h2>¿QUÉ VAS A RECIBIR?</h2>
-      <img src="./imagenes/paso.png" alt="">
-      <h4>PASO A PASO DE LA RECETA</h4>
-      <img src="./imagenes/video.png" alt="">
-      <h4>VIDEO EXPLICATIVO</h4>
-      <img src="./imagenes/tips.png" alt="">
-      <h4>TIPS DECORATIVOS</h4>
-      <img src="./imagenes/mas.png" alt="">
-      <h4>MUCHAS MÁS RECETAS</h4>
+      <div class="imagenesPaso">
+        <div class="imagenPaso">
+          <img src="./imagenes/paso.png" alt="">
+          <h4>PASO A PASO<br> DE LA RECETA</h4>
+        </div>
+        <div class="imagenPaso">
+          <img src="./imagenes/video.png" alt="">
+          <h4>VIDEO<br> EXPLICATIVO</h4>
+        </div>
+        <div class="imagenPaso">
+          <img src="./imagenes/tips.png" alt="">
+          <h4>TIPS<br> DECORATIVOS</h4>
+        </div>
+        <div class="imagenPaso">
+          <img src="./imagenes/mas.png" alt="">
+          <h4>MUCHAS MÁS <br>RECETAS</h4>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -92,10 +120,18 @@
   </main>
 
   <footer>
-    <img src="./imagenes/facebook.png" alt="">
-    <img src="./imagenes/instagram.png" alt="">
-    <img src="./imagenes/tiktok.png" alt="">
-    <img src="./imagenes/youtube.png" alt="">
+    <a href="https://www.facebook.com/paulinacocina.net" target="_blank" title="Facebook de Paulina Cocina">
+      <img src="./imagenes/facebook.png" alt="">
+    </a>
+    <a href="https://www.instagram.com/paulinacocina/" target="_blank" title="Perfil de Instagram de Paulina Cocina">
+      <img src="./imagenes/instagram.png" alt="">
+    </a>
+    <a href="https://www.tiktok.com/@paulinacocina" target="_blank" title="TikTok de Paulina Cocina">
+      <img src="./imagenes/tiktok.png" alt="">
+    </a>
+    <a href="https://www.youtube.com/paulinacocina" target="_blank" title="Canal de Youtube de Paulina Cocina">
+      <img src="./imagenes/youtube.png" alt="">
+    </a>
   </footer>
 
 </body>
