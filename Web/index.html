@@ -94,28 +94,53 @@
       </div>
     </section>
 
-    <section>
-      <h2>COMENTARIOS DE NUESTROS USUARIOS</h2>
-      <img src="./imagenes/andrea.jpg" alt="">
-      <h4>ANDREA</h4>
-      <p>Me encanta! Es muy fácil de seguir los pasos, ahora todos aman mis recetas.</p>
-      <img src="./imagenes/mariana.jpg" alt="">
-      <h4>MARIANA</h4>
-      <p>Amo los pequeños tips de decoración que dan, hacen que mis platos se vean como de revista.</p>
-      <img src="./imagenes/sergio.jpg" alt="">
-      <h4>SERGIO</h4>
-      <p>¡Riquísimo! Lo hice en 30 minutos. ¡Súper recomendable!</p>
-      <img src="./imagenes/matias.jpg" alt="">
-      <h4>MATIAS</h4>
-      <p>Probé ya tres recetas y todas salieron riquísimas. Me gusta que también manden ideas nuevas cada semana.</p>
+    <section class="seccion5">
+      <div class="tituloComentario">
+        <h2>COMENTARIOS DE NUESTROS USUARIOS</h2>
+      </div>
+      <div class="comentarios">
+        <div class="comentario">
+          <div class="contenido-comentario">
+            <h4>ANDREA</h4>
+            <p>Me encanta! Es muy fácil de seguir los pasos, ahora todos aman mis recetas.</p>
+          </div>
+          <img src="./imagenes/andrea.jpg" alt="">
+        </div>
+        <div class="comentario">
+          <div class="contenido-comentario">
+            <h4>MARIANA</h4>
+            <p>Amo los pequeños tips de decoración que dan, hacen que mis platos se vean como de revista.</p>
+          </div>
+          <img src="./imagenes/mariana.jpg" alt="">
+        </div>
+        <div class="comentario">
+          <div class="contenido-comentario">
+            <h4>SERGIO</h4>
+            <p>¡Riquísimo! Lo hice en 30 minutos. ¡Súper recomendable!</p>
+          </div>
+          <img src="./imagenes/sergio.jpg" alt="">
+        </div>
+        <div class="comentario">
+          <div class="contenido-comentario">
+            <h4>MATIAS</h4>
+            <p>Probé ya tres recetas y todas salieron riquísimas. Me gusta que también manden ideas nuevas cada semana.</p>
+          </div>
+          <img src="./imagenes/matias.jpg" alt="">
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="seccion6">
       <h2>¡NO TE PIERDAS LAS RECETAS MÁS RICAS DE PAULINA PARA ESTAS FIESTAS!</h2>
-      <p>Nombre</p>
-      <p>Mail</p>
       <img src="./imagenes/paulina.jpg" alt="">
-      <button>RECIBIR RECETAS</button>
+      <div class="formularioFinal">
+        <form id="formularioFinal">
+          <input type="text" id="nombreFinal" name="nombreFinal" placeholder="Nombre">
+          <input type="email" id="mailFinal" name="mailFinal" placeholder="Mail">
+          <button id="botonFormularioFinal" type="submit">RECIBIR RECETAS</button>
+          <div id="mensajeErrorFinal" class="errorFormulario"></div>
+        </form>
+      </div>
     </section>
   </main>
 

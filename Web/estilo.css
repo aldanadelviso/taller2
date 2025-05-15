@@ -237,6 +237,87 @@ input {
 }
 /* FIN SECCION 4 */
 
+/* SECCION 5 */
+.seccion5 {
+  background-color:#95C2D3;
+  margin-top: 90px;
+}
+.tituloComentario{
+  background-color: #c62828;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;      
+  justify-content: center;
+  height: 75px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.tituloComentario h2{
+  color: white;
+  font-size: 30px;
+
+}
+
+.comentarios {
+  display: flex;
+  justify-content: space-around; /* distribuye el espacio */
+  gap: 20px; /* opcional para dar espacio entre elementos */
+  padding: 52px;
+  flex-wrap: wrap; 
+}
+
+.comentario {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 434px;
+  margin: 20px auto;
+  overflow: visible;
+}
+
+.comentario img {
+  width: 200px;           
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translateX(53%); 
+}
+
+
+.contenido-comentario h4 {
+  font-size: 20px;
+  color: #c62828;
+}
+
+.contenido-comentario p {
+  font-size: 17px;
+  color: #333;
+  width: 140%;
+}
+/* FIN SECCION 5 */
+
+/* SECCION 6 */
+.seccion6 {
+  position: relative;
+  display: inline-block;
+}
+.seccion6 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.formularioFinal {
+  position: absolute;
+  top: 22%;
+  left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* FIN SECCION 6 */
 
 footer img{
   width: 70px;

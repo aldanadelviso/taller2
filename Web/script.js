@@ -1,8 +1,23 @@
 document.getElementById("botonFormulario").addEventListener("click", function () {
+  validarFormulario("formulario","nombre","mail","mensajeError","mensajeGracias","popupGracias");
+});
+
+document.getElementById("botonFormularioFinal").addEventListener("click", function () {
+  validarFormulario("formularioFinal","nombreFinal","mailFinal","mensajeErrorFinal","mensajeGracias","popupGracias");
+});
+
+
+document.getElementById("boton-ok").addEventListener("click", function () {
+    var popup = document.getElementById('popupGracias');
+    popup.style.display = 'none';
+});
+
+
+function validarFormulario(idFormulario, idNombre, idMail, idMensajeError, idMensajeGracias, idPopup){
     event.preventDefault();
-    var nombre = document.getElementById("nombre").value;
-    var mail = document.getElementById("mail").value;
-    var mensajeError = document.getElementById("mensajeError");
+    var nombre = document.getElementById(idNombre).value;
+    var mail = document.getElementById(idMail).value;
+    var mensajeError = document.getElementById(idMensajeError);
 
     // Validación básica
     if (nombre === "" || mail === "") {
@@ -19,16 +34,10 @@ document.getElementById("botonFormulario").addEventListener("click", function ()
 
     mensajeError.textContent = "";
 
-    var mensaje = document.getElementById('mensajeGracias');
-    var popup = document.getElementById('popupGracias');
+    var mensaje = document.getElementById(idMensajeGracias);
+    var popup = document.getElementById(idPopup);
     mensaje.textContent = `¡GRACIAS ${nombre.toUpperCase()}!`;
     popup.style.display = 'block';
-  });
-
-
-document.getElementById("boton-ok").addEventListener("click", function () {
-    var form = document.getElementById("formulario");
+    var form = document.getElementById(idFormulario);
     form.reset();
-    var popup = document.getElementById('popupGracias');
-    popup.style.display = 'none';
-});
+}
