@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="Paulina Cocina">
   <meta name="language" content="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilo.css">
   <script src="./script.js" defer></script>
 </head>
@@ -16,7 +17,7 @@
   <main>
     <section class="seccion1">
         <div class="lado-izquierdo">
-            <img src="./imagenes/portada.jpg" alt="">
+            <img src="./imagenes/portada.jpeg" alt="">
         </div>
         <div class="lado-derecho">
             <h2>¿YA SABES QUE <br>COCINAR PARA <br>PASCUA?</h2>
@@ -53,7 +54,7 @@
           <form id="formulario">
             <input type="text" id="nombre" name="nombre" placeholder="Nombre">
             <input type="email" id="mail" name="mail" placeholder="Mail">
-            <button id="botonFormulario" type="submit">RECIBIR RECETAS</button>
+            <button id="botonFormulario" class="botonFormulario" type="submit">RECIBIR RECETAS</button>
             <div id="mensajeError" class="errorFormulario"></div>
           </form>
           <!-- Modal Popup -->
@@ -63,7 +64,7 @@
             </div>
             <div class="modal-content">
               <h2 id="mensajeGracias">¡GRACIAS!</h2>
-              <div class="check-icon">✔️</div>
+              <img src="./imagenes/iconoOK.png" class="iconoOK">
               <p>Desde ahora, recibirás nuestras recetas antes<br>que sean públicas.</p>
               <p>¡Que empiece el festín!</p>
               <button id="boton-ok" class="ok-button">OK</button>
@@ -131,13 +132,14 @@
     </section>
 
     <section class="seccion6">
-      <h2>¡NO TE PIERDAS LAS RECETAS MÁS RICAS DE PAULINA PARA ESTAS FIESTAS!</h2>
-      <img src="./imagenes/paulina.jpg" alt="">
+      <img src="./imagenes/paulina.jpeg" alt="">
       <div class="formularioFinal">
+        <h2>¡NO TE PIERDAS LAS<br> RECETAS MÁS RICAS<br> DE PAULINA PARA<br> ESTAS FIESTAS!</h2>
         <form id="formularioFinal">
           <input type="text" id="nombreFinal" name="nombreFinal" placeholder="Nombre">
           <input type="email" id="mailFinal" name="mailFinal" placeholder="Mail">
-          <button id="botonFormularioFinal" type="submit">RECIBIR RECETAS</button>
+          <br>
+          <button id="botonFormularioFinal" class="botonFormulario" type="submit">RECIBIR RECETAS</button>
           <div id="mensajeErrorFinal" class="errorFormulario"></div>
         </form>
       </div>
@@ -145,18 +147,20 @@
   </main>
 
   <footer>
-    <a href="https://www.facebook.com/paulinacocina.net" target="_blank" title="Facebook de Paulina Cocina">
-      <img src="./imagenes/facebook.png" alt="">
-    </a>
-    <a href="https://www.instagram.com/paulinacocina/" target="_blank" title="Perfil de Instagram de Paulina Cocina">
-      <img src="./imagenes/instagram.png" alt="">
-    </a>
-    <a href="https://www.tiktok.com/@paulinacocina" target="_blank" title="TikTok de Paulina Cocina">
-      <img src="./imagenes/tiktok.png" alt="">
-    </a>
-    <a href="https://www.youtube.com/paulinacocina" target="_blank" title="Canal de Youtube de Paulina Cocina">
-      <img src="./imagenes/youtube.png" alt="">
-    </a>
+    <div class="redes">
+      <a href="https://www.facebook.com/paulinacocina.net" target="_blank" title="Facebook de Paulina Cocina">
+        <img src="./imagenes/facebook.png" alt="">
+      </a>
+      <a href="https://www.instagram.com/paulinacocina/" target="_blank" title="Perfil de Instagram de Paulina Cocina">
+        <img src="./imagenes/instagram.png" alt="">
+      </a>
+      <a href="https://www.tiktok.com/@paulinacocina" target="_blank" title="TikTok de Paulina Cocina">
+        <img src="./imagenes/tiktok.png" alt="">
+      </a>
+      <a href="https://www.youtube.com/paulinacocina" target="_blank" title="Canal de Youtube de Paulina Cocina">
+        <img src="./imagenes/youtube.png" alt="">
+      </a>
+    </div>
   </footer>
 
 </body>

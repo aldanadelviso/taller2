@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
+header {
   background-color: #B32618;
   color: white;
   padding: 20px;
@@ -34,9 +34,6 @@ header, footer {
   max-width: 370px;
   height: 48px;
 }
-section {
-  width: 100%;
-}
 
 /* SECCION 1 */
  
@@ -45,13 +42,17 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 2rem; /* Espacio entre columnas */
-}  
+}
 
 .lado-izquierdo {
   width: 60%;
 }
 .lado-derecho {
   width: 40%;
+}
+
+.lado-derecho p {
+  padding: 25px 0px 25px 0px;
 }
 
 .lado-izquierdo img {
@@ -69,6 +70,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 /* FIN SECCION 1 */
 
 /* SECCION 2 */
@@ -81,20 +83,19 @@ button {
 }
 .imagenesRecetas {
   display: flex;
-  justify-content: space-around; /* distribuye el espacio */
-  gap: 20px; /* opcional para dar espacio entre elementos */
+  justify-content: center;
+  gap: 60px;
   padding: 20px;
-  flex-wrap: wrap; /* permite que pasen a otra línea si no entran */
+  flex-wrap: wrap;
 }
 
 .imagenesReceta {
   position: relative;
-  width: 30%; /* ahora sí, definimos el ancho del contenedor */
+  width: 27%;
 }
 
 .imagenesReceta img {
-  width: 100%; /* para que ocupe todo el contenedor */
-  height: auto;
+  width: 100%;
   border-radius: 25px 25px 25px 25px;
 }
 
@@ -115,6 +116,10 @@ button {
 
 /* SECCION 3 */
 
+.seccion3 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .contenedorFormulario {
     padding: 20px;
     background-color: #95c2d3;
@@ -133,20 +138,27 @@ h3 {
 }
 
 input {
-  width: 100%;
+  width: 98%;
   border: none;
   border-bottom: 2px solid #a02e22;
   background-color: transparent;
   padding: 10px 5px;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 24px;
   color: #333;
   outline: none;
+  font-family: 'MiFuente', sans-serif;
 }
 
 .errorFormulario {
   color: #a02e22;
   padding-top: 8px;
+}
+
+.botonFormulario {
+  background-color: #c62828;
+  border: 2px solid #c62828;
+  margin-top: 20px;
 }
 
  /* Estilo del popup */
@@ -186,10 +198,9 @@ input {
   font-weight: bold;
 }
 
-.check-icon {
-  font-size: 60px;
-  color: #97cc8c;
-  margin: 20px 0;
+.iconoOK {
+  height: 100px;
+  width: auto;
 }
 
 .ok-button {
@@ -261,10 +272,13 @@ input {
 
 .comentarios {
   display: flex;
-  justify-content: space-around; /* distribuye el espacio */
-  gap: 20px; /* opcional para dar espacio entre elementos */
-  padding: 52px;
-  flex-wrap: wrap; 
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+  padding: 0%;
+  flex-wrap: wrap;
+  margin-right: 8%;
+  padding-bottom: 60px;
 }
 
 .comentario {
@@ -272,7 +286,7 @@ input {
   background-color: #fff;
   border-radius: 12px;
   padding: 10px;
-  max-width: 434px;
+  max-width: 31%;
   margin: 20px auto;
   overflow: visible;
 }
@@ -301,23 +315,41 @@ input {
 /* SECCION 6 */
 .seccion6 {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 .seccion6 img {
-  width: 100%;
-  height: auto;
-  display: block;
+  margin-top: 10%;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  width: 85%;
 }
 
 .formularioFinal {
   position: absolute;
-  top: 22%;
-  left: 20px;
+  z-index:2;
+  top: 10%;
+  left: 10%;
   padding: 10px;
-  border-radius: 5px;
+  width: 82%;
 }
 
+.formularioFinal input {
+  width: 58%;
+}
 /* FIN SECCION 6 */
+
+footer {
+  background-color: #B32618;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: -963px;
+  position: relative;
+  height: 1150px;
+  z-index: 0;
+}
 
 footer img{
   width: 70px;
@@ -326,4 +358,15 @@ footer img{
 }
 footer a {
   text-decoration: none;
+}
+
+.redes {
+  padding-top: 73%;
+  padding-left: 76%;
+}
+
+
+
+@media (max-width: 480px) {
+  
 }
