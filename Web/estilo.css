@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -481,7 +483,9 @@ footer a {
     flex-direction: column;
     margin-right: 0;
     align-items: center;
-    margin-right: 14  px;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
   }
 
   .comentario {
