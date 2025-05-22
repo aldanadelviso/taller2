@@ -17,18 +17,19 @@
   <main>
     <section class="seccion1">
         <div class="lado-izquierdo">
-            <img src="./imagenes/portada.jpeg" alt="">
+            <img class="portadaDesktop" src="./imagenes/portada.jpeg" alt="">
+            <img class="portadaMobile" src="./imagenes/portadaR.jpg" alt="">
         </div>
         <div class="lado-derecho">
             <h2>¿YA SABES QUE <br>COCINAR PARA <br>PASCUA?</h2>
             <p>Recibí recetas exclusivas<br> en tu mail justo antes<br> de la próxima fiesta.</p>
-            <a href="#seccion3"><button >RECIBIR RECETAS</button></a>
+            <a href="#seccion6"><button class="botonPortada">RECIBIR RECETAS</button></a>
         </div> 
     </section>
 
     <section class="seccion2">
-      <h2>RECETAS PARA ESTA PASCUA</h2>
-      <p>Suscribite y recibí estas exquisitas recetas y mucho más.</p>
+      <h2>RECETAS PARA <br class="salto-mobile">ESTA PASCUA</h2>
+      <p>Suscribite y recibí estas<br class="salto-mobile"> exquisitas recetas <br class="salto-mobile">y mucho más.</p>
       <div class="imagenesRecetas">
         <div class="imagenesReceta">
             <img src="./imagenes/rosca.jpg" alt="">
@@ -45,32 +46,6 @@
         </div>
       </div>
 
-    </section>
-
-    <section id="seccion3" class="seccion3">
-      <div class="contenedorFormulario">
-          <h3>DEJANOS TU DATOS</h3>
-          <p>Y recibí las recetas más ricas!</p>
-          <form id="formulario">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            <input type="email" id="mail" name="mail" placeholder="Mail">
-            <button id="botonFormulario" class="botonFormulario" type="submit">RECIBIR RECETAS</button>
-            <div id="mensajeError" class="errorFormulario"></div>
-          </form>
-          <!-- Modal Popup -->
-          <div class="modal" id="popupGracias">
-            <div class="header-content">
-              <img src="./imagenes/logop.svg" alt="">
-            </div>
-            <div class="modal-content">
-              <h2 id="mensajeGracias">¡GRACIAS!</h2>
-              <img src="./imagenes/iconoOK.png" class="iconoOK">
-              <p>Desde ahora, recibirás nuestras recetas antes<br>que sean públicas.</p>
-              <p>¡Que empiece el festín!</p>
-              <button id="boton-ok" class="ok-button">OK</button>
-            </div>
-          </div>
-      </div>
     </section>
 
     <section class="seccion4">
@@ -103,45 +78,59 @@
         <div class="comentario">
           <div class="contenido-comentario">
             <h4>ANDREA</h4>
-            <p>Me encanta! Es muy fácil de seguir los pasos, ahora todos aman mis recetas.</p>
+            <p>Me encanta! Es muy fácil<br class="salto-mobile"> de seguir los pasos, ahora <br class="salto-mobile">todos aman mis recetas.</p>
           </div>
           <img src="./imagenes/andrea.jpg" alt="">
         </div>
         <div class="comentario">
           <div class="contenido-comentario">
             <h4>MARIANA</h4>
-            <p>Amo los pequeños tips de decoración que dan, hacen que mis platos se vean como de revista.</p>
+            <p>Amo los pequeños tips<br class="salto-mobile"> de decoración que dan,<br class="salto-mobile"> hacen que mis platos<br class="salto-mobile"> se vean como de revista.</p>
           </div>
           <img src="./imagenes/mariana.jpg" alt="">
         </div>
         <div class="comentario">
           <div class="contenido-comentario">
             <h4>SERGIO</h4>
-            <p>¡Riquísimo! Lo hice en 30 minutos. ¡Súper recomendable!</p>
+            <p>¡Riquísimo! <br class="salto-mobile">Lo hice en 30 minutos. <br class="salto-mobile">¡Súper recomendable!</p>
           </div>
           <img src="./imagenes/sergio.jpg" alt="">
         </div>
         <div class="comentario">
           <div class="contenido-comentario">
             <h4>MATIAS</h4>
-            <p>Probé ya tres recetas y todas salieron riquísimas. Me gusta que también manden ideas nuevas cada semana.</p>
+            <p>Probé ya tres recetas y<br class="salto-mobile"> todas salieron riquísimas. <br class="salto-mobile">Me gusta que también <br class="salto-mobile">manden ideas nuevas <br class="salto-mobile">cada semana.</p>
           </div>
           <img src="./imagenes/matias.jpg" alt="">
         </div>
       </div>
     </section>
 
-    <section class="seccion6">
-      <img src="./imagenes/paulina.jpeg" alt="">
-      <div class="formularioFinal">
-        <h2>¡NO TE PIERDAS LAS<br> RECETAS MÁS RICAS<br> DE PAULINA PARA<br> ESTAS FIESTAS!</h2>
-        <form id="formularioFinal">
-          <input type="text" id="nombreFinal" name="nombreFinal" placeholder="Nombre">
-          <input type="email" id="mailFinal" name="mailFinal" placeholder="Mail">
+    <section id="seccion6" class="seccion6">
+      <img src="./imagenes/paulinaFormulario.jpeg" class="imgFormulario">
+      <div class="formulario">
+        <h2 class="tituloSeccion6">¡NO TE PIERDAS LAS<br> RECETAS MÁS RICAS<br> DE PAULINA PARA<br> ESTAS FIESTAS!</h2>
+        <form id="formulario">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+          <input type="email" id="mail" name="mail" placeholder="Mail">
           <br>
-          <button id="botonFormularioFinal" class="botonFormulario" type="submit">RECIBIR RECETAS</button>
-          <div id="mensajeErrorFinal" class="errorFormulario"></div>
+          <button id="botonFormulario" class="botonFormulario" type="submit">RECIBIR RECETAS</button>
+          <div id="mensajeError" class="errorFormulario"></div>
         </form>
+        <!-- Modal Popup -->
+        <div class="modal" id="popupGracias">
+          <div class="header-content">
+            <img src="./imagenes/logop.svg" alt="">
+          </div>
+          <div class="modal-content">
+            <h2 id="mensajeGracias">¡GRACIAS!</h2>
+            <img src="./imagenes/iconoOK.png" class="iconoOK">
+            <p>Desde ahora, recibirás nuestras recetas antes<br>que sean públicas a:</p>
+            <p id="emailPopUp"></p>
+            <p>¡Que empiece el festín!</p>
+            <button id="boton-ok" class="ok-button">OK</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
