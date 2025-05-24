@@ -212,7 +212,7 @@ button {
 }
 
 .contenido-comentario p {
-  font-size: 17px;
+  font-size: 15px;
   color: #333;
   width: 140%;
 }
@@ -434,7 +434,7 @@ footer a {
   .imagenesRecetas {
     flex-direction: column;
     gap: 20px;
-    padding: 10px;
+    padding: 25px;
   }
 
   .imagenesReceta {
@@ -561,6 +561,10 @@ footer a {
     margin-left: 25px;
   }
 
+  .mensajeGracias {
+    text-align: center;
+  }
+  
   .ok-button {
     font-size: 22px;
   }
