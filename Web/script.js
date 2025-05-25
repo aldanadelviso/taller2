@@ -4,13 +4,13 @@ document.getElementById("botonFormulario").addEventListener("click", function ()
   var mail = document.getElementById("mail").value;
   var mensajeError = document.getElementById("mensajeError");
 
-  // Validación básica
+  // Validación de campos vacios
   if (nombre === "" || mail === "") {
     mensajeError.textContent = "Por favor completá todos los campos.";
     return;
   }
 
-  // Validar formato de email simple
+  // Validar formato de email
   var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
   if (!emailValido) {
     mensajeError.textContent = "Ingresá un email válido.";

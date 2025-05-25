@@ -45,7 +45,7 @@ header {
   background-color: #bfdcdf;
   display: flex;
   justify-content: space-between;
-  gap: 2rem; /* Espacio entre columnas */
+  gap: 2rem;
 }
 .portadaDesktop {
   display: block;
@@ -70,8 +70,8 @@ header {
 
 button {
     padding: 15px;
-    border: 2px solid #68A7BF;  /* color del borde */
-    border-radius: 15px;         /* redondeo de bordes */
+    border: 2px solid #68A7BF;
+    border-radius: 15px;
     background-color: transparent;
     background-color: #68A7BF;
     font-size: 1.30rem;
@@ -212,7 +212,7 @@ button {
 }
 
 .contenido-comentario p {
-  font-size: 15px;
+  font-size: 20px;
   color: #333;
   width: 140%;
 }
@@ -230,6 +230,10 @@ button {
   position: relative;
   z-index: 1;
   width: 75%;
+}
+
+.imgFormularioMobile {
+  display: none;
 }
 
 input {
@@ -265,17 +269,18 @@ input {
   top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 10%;
+  padding-top: 12%;
   background: rgba(0,0,0,0.5);
 }
 
 .modal-content {
   background: white;
-  max-width: 500px;
+  max-width: 475px;
   margin: auto;
   padding: 1px;
   border-radius: 0px 0px 15px 15px;
   text-align: center;
+  border: 12px solid #b32518;
 }
 
 .header-content {
@@ -320,7 +325,7 @@ input {
 }
 
 .modal p {
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .modal h2 {
@@ -377,7 +382,7 @@ footer a {
 
   /* Sección 1 */
   .seccion1 {
-    position: relative; /* Necesario para posicionar hijos absolutos */
+    position: relative;
     background-color: #bfdcdf;
     display: flex;
     justify-content: center;
@@ -439,6 +444,7 @@ footer a {
 
   .imagenesReceta {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .etiqueta {
@@ -448,7 +454,7 @@ footer a {
   /* Sección 4 */
 
   .seccion4 {
-    margin-top: 80px;
+    margin-top: 38px;
     margin-bottom: 0px;
   }
   .seccion4 h4 {
@@ -489,16 +495,27 @@ footer a {
   .comentario {
     max-width: 90%;
     border-radius: 30px;
-    margin-right: 45px;
     padding: 0px 28px 12px 18px;
+  }
+
+  .comentarioDer{
+    margin-right: 45px;
+  }
+
+  .comentarioIzq {
+    margin-right: 15px;
   }
 
   .comentario img {
     width: 120px;
     height: 120px;
-    transform: translateX(60%);
+    transform: translateX(46%);
     margin-top: 18px;
   } 
+
+  .comentarioImagenIzq {
+    transform: translateX(-157%) !important;
+  }
 
   .contenido-comentario {
     width: 144px;
@@ -509,42 +526,61 @@ footer a {
     width: 100%;
     position: absolute;
     margin-top: -15px;
+    font-size: 15px;
   }
 
-  .contenido-comentario h4 {
-    margin-right: 5px;
+  .nombreComentarioIzq {
+    padding-left: 82px;
+  }
+  .mensajeComentarioIzq {
+    padding-left: 82px;
   }
 
   /* Sección 6 */
   .formulario {
     width: 90%;
-    top: 5%;
+    top: 27%;
     left: 5%;
   }
 
-  .imgFormulario {
+  .imgFormularioMobile {
     width: 100%;
     margin-top: 20px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    display: block;
+  }
+
+  .imgFormulario {
+    display: none;
+  }
+
+  .errorFormulario {
+    max-width: 210px;
   }
 
   input {
-    width: 60%;
+    width: 100%;
     font-size: 19px;
   }
 
   .seccion6 {
-    margin-top: 265px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .tituloSeccion6 {
     position: absolute;
-    bottom: 120%;
+    bottom: 93%;
     width: 100%;
   }
 
   /* Modal */
-  .modal-content {
-    width: 90%;
+
+  .modal {
+      padding-top: 22%;
   }
 
   .modal h2 {
@@ -552,13 +588,14 @@ footer a {
   }
 
   .header-content {
-    max-width: 300px;
-    margin-left: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .modal-content {
-    width: 334px;
-    margin-left: 25px;
+    width: 309px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .mensajeGracias {
@@ -573,23 +610,25 @@ footer a {
     background-color: #c62828;
     border: 2px solid #c62828;
     margin-top: 10px;
-    padding: 12px;
+    padding: 9px;
     margin-left: -10px;
+    font-size: 20px;
 }
 
   /* Footer */
   footer {
-    margin-top: 0;
-    height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 9px;
+    margin-top: -473px;
+    height: 560px;
   }
 
   .redes {
-    padding-top: 20px;
+    padding-top: 35px;
     padding-left: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 138%;
   }
 
   footer img {
